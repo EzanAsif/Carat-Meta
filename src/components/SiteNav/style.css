@@ -1,0 +1,232 @@
+/* NAVBAR */
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid;
+  /* transition: 0.3s ease; */
+  /* padding: 0px 15%; */
+}
+
+.navbar.active {
+  /* transition: 0.15s ease; */
+  background-color: rgb(251, 255, 250);
+  padding-left: 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.navbar-logo {
+  width: 150px;
+}
+
+.navbar-logo img {
+  width: 100%;
+}
+
+.nav-menu {
+  /* display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  justify-content: end;
+  margin-right: 2rem; */
+  display: flex;
+  list-style: none;
+  text-align: center;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.nav-item {
+  height: max-content;
+}
+
+.nav-links {
+  color: #191c3c;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin: 5px;
+  text-transform: uppercase;
+}
+
+/* .nav-links:hover {
+  border-bottom: 4px solid #91c691;
+  transition: all 0.2s ease-out;
+} */
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.GetStarted {
+  padding: 8px 15px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #65ac65;
+  background-color: #65ac65;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  width: 180px;
+  margin: 0px 5px;
+}
+
+.GetStarted1 {
+  padding: 8px 15px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #323232;
+  background-color: #ffff;
+  color: #323232;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  width: 180px;
+  margin: 0px 35px 0px;
+}
+
+.nav-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1150px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .NavbarItems {
+    position: relative;
+  }
+
+  .navbar-container {
+    align-items: center;
+  }
+
+  .nav-menu {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    justify-content: space-between;
+    position: absolute;
+    flex-wrap: wrap;
+    /* top: 80px; */
+    top: -500%;
+    opacity: 1;
+    /* transition: all 0.5s ease; */
+  }
+
+  .nav-menu.active {
+    background: rgb(250, 255, 249);
+    top: 80px;
+    opacity: 1;
+    /* transition: all 0.5s ease; */
+    z-index: 1;
+    margin: 0 !important;
+    max-width: 100%;
+    padding-left: 0 !important;
+    display: flex;
+    background-color: pink;
+    height: 85vh;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #fff;
+    color: #242424;
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    /* top: 0; */
+    left: 40px;
+    margin-top: 10px;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    /* transition: all 0.3s ease-out; */
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
+
+  .nav-links {
+    padding: 0.5rem 0rem;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    display: table;
+  }
+
+  /* .nav-links:hover {
+    background-color: #fff;
+    color: #242424;
+    border-radius: 0;
+  } */
+}
+
+@media screen and (max-width: 800px) {
+  .nav-menu.active {
+    flex-direction: column;
+  }
+}
