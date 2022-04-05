@@ -17,7 +17,7 @@
 
 .navbar.active {
   /* transition: 0.15s ease; */
-  background-color: rgb(251, 255, 250);
+  background-color: #fff;
   padding-left: 0 !important;
   display: flex;
   flex-direction: column;
@@ -164,7 +164,7 @@
   }
 
   .nav-menu.active {
-    background: rgb(250, 255, 249);
+    background: #ffff;
     top: 80px;
     opacity: 1;
     /* transition: all 0.5s ease; */
