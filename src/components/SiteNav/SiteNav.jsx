@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 const SiteNav = () => {
   const [Click, setClick] = useState(false);
@@ -37,26 +38,21 @@ const SiteNav = () => {
             <i>{Click ? "X" : "=="}</i>
           </div>
           <div className={Click ? "nav-menu active" : "nav-menu"}>
-            <div className="nav-links-test" style={{ display: "flex", flexWrap : 'wrap' }}>
+            <div className="nav-links-container">
               <li className="nav-item">
-                <a href="/" className="nav-links" onClick={closeMobileMenu}>
-                  Home
-                </a>
+                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                  Drop Calendar
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="/" className="nav-links" onClick={closeMobileMenu}>
-                  About Us
-                </a>
+                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                  Clubs
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="/" className="nav-links" onClick={closeMobileMenu}>
-                  Blog
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="/" className="nav-links" onClick={closeMobileMenu}>
-                  Services
-                </a>
+                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                  Metaverse
+                </Link>
               </li>
             </div>
             <div className="nav-cta">
