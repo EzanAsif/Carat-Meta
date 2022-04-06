@@ -30,13 +30,12 @@ const HomePageHeroSection = () => {
       <div className="homePageHeroOverlay"></div>
       <video
         className="homePageHeroBgVid"
-        controls
-        autostart
-        autoPlay
+        muted
+        // autostart
+        autoPlay = {true}
         loop
         src={HomeHeroVid}
         type="video/mp4"
-        muted
       >
         {/* <source src={HomeHeroVid} /> */}
       </video>
