@@ -135,10 +135,10 @@
 @media screen and (max-width: 1050px) {
   .menu-icon {
     display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
+    /* position: absolute; */
+    /* top: 0;
+    right: 0; */
+    /* transform: translate(-100%, 60%); */
     font-size: 1.8rem;
     cursor: pointer;
   }
@@ -148,6 +148,8 @@
 
   .navbar-container {
     align-items: center;
+    width: 90%;
+    justify-content: space-between;
   }
 
   .nav-menu {
@@ -193,10 +195,10 @@
   }
 
   .navbar-logo {
-    position: absolute;
+    /* position: absolute; */
     /* top: 0; */
-    left: 40px;
-    margin-top: 10px;
+    /* left: 40px; */
+    /* margin-top: 10px; */
   }
 
   .nav-links-mobile {
