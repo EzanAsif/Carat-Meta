@@ -35,10 +35,13 @@ const SiteNav = () => {
             />
           </a>
           <div className="menu-icon" onClick={handleClick}>
-            <i>{Click ? "X" : "=="}</i>
+            <i>{Click ? "X" : "="}</i>
           </div>
           <div className={Click ? "nav-menu active" : "nav-menu"}>
-            <div className="nav-links-container">
+            <div
+              className="nav-links-container"
+              style={{ display: "flex", flexWrap: "wrap" }}
+            >
               <li className="nav-item">
                 <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                   Drop Calendar

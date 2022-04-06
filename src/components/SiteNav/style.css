@@ -264,6 +264,7 @@
 @media screen and (max-width: 700px) {
   .nav-links-container {
     margin-left: 30px;
+    width: max-content;
   }
   .nav-menu.active {
     flex-direction: column;
