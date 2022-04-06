@@ -55,7 +55,7 @@
   list-style: none;
   text-align: center;
   justify-content: space-between;
-  width: 75%;
+  width: 85%;
 }
 
 .nav-item {
@@ -121,7 +121,7 @@
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   /* width: 180px; */
-  margin: 0px 35px 0px;
+  margin: 0px 15px 0px;
   cursor: pointer;
 }
 
@@ -132,13 +132,30 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 1300px) {
+  .nav-links,
+  .GetStarted1,
+  .GetStarted {
+    font-size: 12px;
+  }
+  .GetStarted1 {
+    margin: 0px 5px 0px;
+  }
+  .nav-links {
+    padding: 0.25rem 0.5rem;
+  }
+  .nav-links-container {
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 1050px) {
   .menu-icon {
     display: block;
-    /* position: absolute; */
-    /* top: 0;
-    right: 0; */
-    /* transform: translate(-100%, 60%); */
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%); */
     font-size: 1.8rem;
     cursor: pointer;
   }
@@ -148,8 +165,8 @@
 
   .navbar-container {
     align-items: center;
-    width: 90%;
     justify-content: space-between;
+    width: 90%;
   }
 
   .nav-menu {
@@ -173,9 +190,10 @@
     z-index: 1;
     margin: 0 !important;
     max-width: 100%;
-    padding: 40px 1%;
-    width: 98%;
-    max-width: 98%;
+    padding: 40px 0%;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
     display: flex;
     height: max-content;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 10px;
@@ -192,13 +210,6 @@
     background-color: #fff;
     color: #242424;
     border-radius: 0;
-  }
-
-  .navbar-logo {
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 40px; */
-    /* margin-top: 10px; */
   }
 
   .nav-links-mobile {
@@ -236,11 +247,12 @@
     flex-direction: column;
     justify-content: start;
     width: 50%;
+    align-items: baseline;
   }
 
   .nav-cta {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .GetStarted {
@@ -264,18 +276,25 @@
 }
 
 @media screen and (max-width: 700px) {
+  .nav-links {
+    font-size: 14px;
+  }
   .nav-links-container {
     margin-left: 30px;
-    width: max-content;
   }
   .nav-menu.active {
     flex-direction: column;
+    padding: 20px 1%;
     /* height: 60vh; */
   }
   .nav-cta {
-    margin-top: 80px;
+    margin-top: 10px;
   }
   .nav-menu {
     justify-content: space-between;
+  }
+  .nav-menu.active .nav-links-container {
+    width: 75%;
+    align-items: baseline;
   }
 }

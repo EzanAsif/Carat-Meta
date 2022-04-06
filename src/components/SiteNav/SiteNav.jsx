@@ -49,12 +49,27 @@ const SiteNav = () => {
               </li>
               <li className="nav-item">
                 <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                  Clubs
+                  Hub
                 </Link>
               </li>
               <li className="nav-item">
                 <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                  Metaverse
+                  White Paper
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                  Sustainability
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                  News
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                  About
                 </Link>
               </li>
             </div>
