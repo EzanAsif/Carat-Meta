@@ -1,14 +1,11 @@
-.PastDropHeading {
-  font-size: 24px;
-}
-
 .PastDropsHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.PastDropHeading {
+.PastDropHeading,
+.LatestInsightsHeading {
   font-family: "Abel";
   font-size: 2rem;
 }

@@ -13,7 +13,7 @@ const images = [
 ];
 const PastDropSlider = ({ obj }) => {
   return (
-    <>
+    <div style={{ marginBottom: 20 }}>
       <div className="slide-img">
         <img src={obj} alt="" />
       </div>
@@ -36,13 +36,13 @@ const PastDropSlider = ({ obj }) => {
           <h5>@ Amedo</h5>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
 const PastDrops = () => {
   return (
-    <div style={{ margin: "50px 0px" }}>
+    <div style={{ margin: "50px 0px 50px" }}>
       <div className="PastDropsHeader">
         <div className="PastDropHeading">Past Drops</div>
         <Link className="PastDropsHeaderLink" to="/">

@@ -3,7 +3,7 @@
 }
 
 .slick-list {
-  height: 430px !important;
+  height: max-content !important;
 }
 
 .slide {

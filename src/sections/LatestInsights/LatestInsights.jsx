@@ -5,13 +5,27 @@ import { BsArrowRight } from "react-icons/bs";
 import SlideComponent from "../../components/SlideComponent/SlideComponent";
 
 const images = [
-  "https://d3h5uaiactj0we.cloudfront.net/media/Amedeo_drop_banner.jpg",
-  "https://d3h5uaiactj0we.cloudfront.net/media/Asprey_Bugatti_DropPage.png",
+  "https://exclusible.com/static/assets/images/uni1.jpeg",
+  "https://exclusible.com/static/assets/images/uni2.jpeg",
 ];
 const PastDropSlider = ({ obj }) => {
   return (
-    <div style={{ width: "90%" }}>
-      <h2>working {obj}</h2>
+    <div style={{ width: "100%", margin: "20px 0px" }}>
+      <img className="LatestInsightSlideImg" src={obj} />
+      <div className="LatestInsightSlideContent">
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <h5 className="SlideHeading">
+            HOW TO ATTRACT MORE WOMEN TO CRYPTO AND NFTS?
+          </h5>
+        </Link>
+        <p className="SlidePara">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          omnis eaque explicabo unde magnam. Voluptates, molestiae sint. Velit
+          soluta totam corporis, sapiente consectetur enim quos placeat saepe
+          illo tempora molestiae...
+        </p>
+        <div className="SlideDate">16 November 2021</div>
+      </div>
     </div>
   );
 };
@@ -19,8 +33,8 @@ const PastDropSlider = ({ obj }) => {
 const LatestInsights = () => {
   return (
     <div style={{ margin: "50px 0px" }}>
-      <div className="PastDropsHeader">
-        <div className="PastDropHeading">Latest Insights</div>
+      <div className="LatestInsightsHeader">
+        <div className="LatestInsightsHeading">Latest Insights</div>
       </div>
       <div style={{ width: "100%" }} className="SlideComponent">
         <SlideComponent
