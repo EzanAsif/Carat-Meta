@@ -5,13 +5,13 @@ import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
-const FourthSection = () => {
+const PasDropSlider = ({ images = [], SliderComponent, slideToShowProp }) => {
   const settings = {
-    infinite: true,
+    // infinite: true,
     // autoplay: true,
     speed: 1000,
     autoplaySpeed: 1000,
-    slidesToShow: 3,
+    slidesToShow: slideToShowProp ? slideToShowProp : 3,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: true,
@@ -78,46 +78,14 @@ const FourthSection = () => {
     );
   }
 
-  const images = [
-    "https://d3h5uaiactj0we.cloudfront.net/media/Amedeo_drop_banner.jpg",
-    "https://d3h5uaiactj0we.cloudfront.net/media/Asprey_Bugatti_DropPage.png",
-    "https://d3h5uaiactj0we.cloudfront.net/media/bg_drop_page_louius_moinet.jpg",
-    "https://prod-exclusible-com.s3-eu-west-1.amazonaws.com/media/island_landing_thumb.jpeg",
-    "https://d3h5uaiactj0we.cloudfront.net/media/LuxuryDistrictVillasHeroImage_V3.jpg",
-  ];
-
   return (
-    <div className="pastDropSlider">
+    <div className="SlideComponent">
       <Slider {...settings}>
         {images.map((obj, index) => {
           return (
-            <div key={index}>
-              <div className="slide-test">
-                <div className="slide-img-test">
-                  <img src={obj} alt="" />
-                </div>
-                <div className="slide-content">
-                  <Link
-                    to="/"
-                    style={{ color: "#30333c", textDecoration: "none" }}
-                  >
-                    <h4>Crypto Cameos NFT Collection</h4>
-                  </Link>
-                  <div className="collection-by">
-                    <span>
-                      <img
-                        src="https://exclusible.com/_next/image?url=https%3A%2F%2Fd3h5uaiactj0we.cloudfront.net%2Fmedia%2FAmedeo_profile_pic.png&w=128&q=75"
-                        alt=""
-                        style={{
-                          width: "100%",
-                          height: "100%",
-                          borderRadius: "100%",
-                        }}
-                      />
-                    </span>
-                    <h5>@ Amedo</h5>
-                  </div>
-                </div>
+            <div>
+              <div className="slide">
+                <SliderComponent obj={obj} key={index} />
               </div>
             </div>
           );
@@ -127,4 +95,4 @@ const FourthSection = () => {
   );
 };
 
-export default FourthSection;
+export default PasDropSlider;

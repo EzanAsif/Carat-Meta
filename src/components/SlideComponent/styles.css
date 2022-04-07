@@ -1,4 +1,4 @@
-.pastDropSlider {
+.SlideComponent {
   margin: 45px 0px;
 }
 
@@ -6,7 +6,7 @@
   height: 430px !important;
 }
 
-.slide-test {
+.slide {
   width: 90% !important;
   margin: 0px auto !important;
   box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 2px !important;
@@ -15,11 +15,11 @@
   display: block;
 }
 
-.slide-img-test {
+.slide-img {
   height: 220px;
   width: 100%;
 }
-.slide-img-test img {
+.slide-img img {
   border-radius: 12px 12px 0px 0px !important;
   width: 100%;
   height: 100%;
@@ -85,7 +85,7 @@
 }
 
 @media screen and (max-width: 300px) {
-  .pastDropSlider {
+  .SlideComponent {
     margin: 25px 0px;
   }
 }

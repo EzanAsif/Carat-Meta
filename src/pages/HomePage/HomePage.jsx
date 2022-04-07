@@ -3,6 +3,7 @@ import SiteNav from "../../components/SiteNav/SiteNav";
 import HomePageHeroSection from "../../sections/HomePageHeroSection/HomePageHeroSection";
 import PastDrops from "../../sections/PastDrops/PastDrops";
 import SectionsContainer from "../../components/SectionsContainer/SectionsContainer";
+import LatestInsights from "../../sections/LatestInsights/LatestInsights";
 const HomePage = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const HomePage = () => {
       </div>
       <SectionsContainer>
         <PastDrops />
+        <LatestInsights />
       </SectionsContainer>
     </div>
   );
