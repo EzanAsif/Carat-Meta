@@ -4,6 +4,7 @@ import HomePageHeroSection from "../../sections/HomePageHeroSection/HomePageHero
 import PastDrops from "../../sections/PastDrops/PastDrops";
 import SectionsContainer from "../../components/SectionsContainer/SectionsContainer";
 import LatestInsights from "../../sections/LatestInsights/LatestInsights";
+import FeaturedIn from "../../sections/FeaturedIn/FeaturedIn";
 const HomePage = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const HomePage = () => {
         <PastDrops />
         <LatestInsights />
       </SectionsContainer>
+      <FeaturedIn />
     </div>
   );
 };

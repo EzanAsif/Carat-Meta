@@ -1,0 +1,21 @@
+.infinite-test {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: inherit;
+  padding: 0px 50px;
+  animation: 5s linear 2.5s infinite ease normal none running right-to-left-web;
+  /* position: relative;
+  animation-iteration-count: infinite; */
+}
+
+/* @keyframes right-to-left-web {
+  0%,
+  100% {
+    left: 0;
+  }
+
+  50% {
+    left: 100%;
+  }
+} */
