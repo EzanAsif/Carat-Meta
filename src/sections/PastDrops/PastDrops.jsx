@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.css";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
+import PastDropSlider from "../../components/PastDropSlider/PastDropSlider";
 const PastDrops = () => {
   return (
     <div style={{ margin: "50px 0px" }}>
@@ -15,6 +16,9 @@ const PastDrops = () => {
             <BsArrowRight />
           </span>
         </Link>
+      </div>
+      <div style={{ width: "100%" }} className="pastDropSlider">
+        <PastDropSlider />
       </div>
     </div>
   );

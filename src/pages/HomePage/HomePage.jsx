@@ -12,12 +12,12 @@ const HomePage = () => {
       </div>
       <SectionsContainer>
         <PastDrops />
+        {/* <PastDrops />
         <PastDrops />
         <PastDrops />
         <PastDrops />
         <PastDrops />
-        <PastDrops />
-        <PastDrops />
+        <PastDrops /> */}
       </SectionsContainer>
     </div>
   );
