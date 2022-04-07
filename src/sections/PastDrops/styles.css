@@ -28,3 +28,27 @@
   font-size: 18px;
   color: #323232;
 }
+
+@media screen and (max-width: 600px) {
+  .PastDropHeading {
+    font-size: 1.5rem;
+  }
+  .PastDropsHeaderLink {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .PastDropsHeader {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .PastDropsHeader .PastDropHeading {
+    width: 100%;
+    text-align: left;
+  }
+  .PastDropsHeader .PastDropsHeaderLink {
+    width: max-content;
+    margin-top: 20px;
+  }
+}

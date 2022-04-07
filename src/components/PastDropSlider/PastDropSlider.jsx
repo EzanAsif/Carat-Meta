@@ -38,59 +38,43 @@ const FourthSection = () => {
   function SampleNextArrow(props) {
     const { style, onClick } = props;
     return (
-      <>
-        <BsArrowRight
-          class="fa fa-angle-right fa-2x"
-          onClick={onClick}
-          style={{
-            ...style,
-            // bottom: 50,
-            // right: 40,
-            cursor: "pointer",
-            // zIndex: 1111,
-            // position: "absolute",
-            // marginRight: 50,
-            display: "block",
-            background: "white",
-            // borderRadius: 100,
-            padding: 15,
-            width: 30,
-            height: 30,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        />
-      </>
+      <BsArrowRight
+        class="fa fa-angle-right fa-2x"
+        onClick={onClick}
+        style={{
+          ...style,
+          cursor: "pointer",
+          position: "absolute",
+          background: "#ffffffb3",
+          padding: 15,
+          width: 30,
+          height: 50,
+          right: 0,
+          top: 150,
+        }}
+      />
     );
   }
 
   function SamplePrevArrow(props) {
     const { style, onClick } = props;
     return (
-      <>
-        <BsArrowLeft
-          class="fa fa-angle-left fa-2x"
-          onClick={onClick}
-          style={{
-            ...style,
-            // bottom: 50,
-            // right: 170,
-            zIndex: 1111,
-            cursor: "pointer",
-            // position: "absolute",
-            display: "block",
-            background: "white",
-            borderRadius: 50,
-            padding: 15,
-            width: 30,
-            height: 30,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        />
-      </>
+      <BsArrowLeft
+        class="fa fa-angle-left fa-2x"
+        onClick={onClick}
+        style={{
+          ...style,
+          zIndex: 1111,
+          cursor: "pointer",
+          position: "absolute",
+          background: "#ffffffb3",
+          padding: 15,
+          width: 30,
+          height: 50,
+          left: 0,
+          top: 150,
+        }}
+      />
     );
   }
 
@@ -103,44 +87,42 @@ const FourthSection = () => {
   ];
 
   return (
-    <div className="">
-      <div className="">
-        <Slider {...settings}>
-          {images.map((obj, index) => {
-            return (
-              <div key={index}>
-                <div className="slide-test">
-                  <div className="slide-img-test">
-                    <img src={obj} alt="" />
-                  </div>
-                  <div className="slide-content">
-                    <Link
-                      to="/"
-                      style={{ color: "#30333c", textDecoration: "none" }}
-                    >
-                      <h4>Crypto Cameos NFT Collection</h4>
-                    </Link>
-                    <div className="collection-by">
-                      <span>
-                        <img
-                          src="https://exclusible.com/_next/image?url=https%3A%2F%2Fd3h5uaiactj0we.cloudfront.net%2Fmedia%2FAmedeo_profile_pic.png&w=128&q=75"
-                          alt=""
-                          style={{
-                            width: "100%",
-                            height: "100%",
-                            borderRadius: "100%",
-                          }}
-                        />
-                      </span>
-                      <h5>@ Amedo</h5>
-                    </div>
+    <div className="pastDropSlider">
+      <Slider {...settings}>
+        {images.map((obj, index) => {
+          return (
+            <div key={index}>
+              <div className="slide-test">
+                <div className="slide-img-test">
+                  <img src={obj} alt="" />
+                </div>
+                <div className="slide-content">
+                  <Link
+                    to="/"
+                    style={{ color: "#30333c", textDecoration: "none" }}
+                  >
+                    <h4>Crypto Cameos NFT Collection</h4>
+                  </Link>
+                  <div className="collection-by">
+                    <span>
+                      <img
+                        src="https://exclusible.com/_next/image?url=https%3A%2F%2Fd3h5uaiactj0we.cloudfront.net%2Fmedia%2FAmedeo_profile_pic.png&w=128&q=75"
+                        alt=""
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          borderRadius: "100%",
+                        }}
+                      />
+                    </span>
+                    <h5>@ Amedo</h5>
                   </div>
                 </div>
               </div>
-            );
-          })}
-        </Slider>
-      </div>
+            </div>
+          );
+        })}
+      </Slider>
     </div>
   );
 };
