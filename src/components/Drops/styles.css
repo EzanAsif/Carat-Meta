@@ -132,4 +132,11 @@
   .drop .dropContent .dropCta button {
     padding: 15px 50px;
   }
+  .dropSubscribe{
+    padding: 40px 0px;
+  }
+  .dropSubscribe .newsLetterInputContainer {
+    width: 95%;
+    margin: auto;
+  }
 }

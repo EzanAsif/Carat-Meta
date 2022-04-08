@@ -29,3 +29,15 @@
   font-weight: 400;
   margin-top: 50px;
 }
+
+@media screen and (max-width: 650px) {
+  .react-tabs__tab-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .react-tabs__tab {
+    width: 65% !important;
+    max-width: 75% !important;
+    text-align: center;
+  }
+}
