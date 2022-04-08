@@ -1,0 +1,177 @@
+.siteFooter {
+  border-top: 1px solid #cecece;
+  padding-top: 50px;
+}
+
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 5%;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.newsLetter {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: left;
+}
+
+.newsLetter p {
+  color: rgb(0, 0, 0);
+  font-family: "Inter";
+  text-align: left;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.newsLetter .newsLetterInputContainer {
+  width: 100%;
+  border: 1.5px solid #aaaaaa;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newsLetter .newsLetterInputContainer input {
+  height: 40px;
+  /* width: -moz-available; */
+  border: none;
+  margin: 2px;
+  padding: 5px;
+}
+
+.newsLetter .newsLetterInputContainer input:focus {
+  outline: none;
+  border: none;
+  color: #6d6d6d;
+}
+
+::placeholder {
+  color: #6d6d6d;
+}
+
+.newsLetter .newsLetterInputContainer button {
+  font-size: 16px;
+  margin-right: 5px;
+  cursor: pointer;
+  width: max-content;
+  height: 40px;
+  padding: 0px 15px;
+  background-color: #141414;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.newsLetter .socialIconsContainer {
+  margin-left: 0;
+  padding-left: 0;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.newsLetter .socialIconsContainer li a {
+  color: #141414;
+}
+
+.newsLetter .socialIconsContainer li a svg {
+  font-size: 25px;
+}
+
+.extraLinks {
+  width: 50%;
+}
+
+.extraLinks ul {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.extraLinks ul li {
+  width: 50%;
+  margin: 5px 0px;
+  font-family: "Inter";
+  font-weight: 600;
+  text-align: left;
+  font-size: 15px;
+}
+
+.extraLinks ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin: 65px 0px 10px;
+  font-family: "Abel";
+  letter-spacing: 0.075em;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 900px) {
+  .footerContent .extraLinks {
+    width: 100%;
+  }
+  .footerContent .extraLinks .footerLogo {
+    margin-bottom: 20px;
+  }
+  .footerContent .newsLetter {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .footerContent .extraLinks ul {
+    margin: 30px 0px;
+  }
+  .newsLetter .newsLetterInputContainer {
+    width: 85%;
+  }
+  .newsLetter .socialIconsContainer {
+    width: 35%;
+  }
+  .footer-copyright {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .extraLinks ul li {
+    width: 75%;
+  }
+  .footerContent .extraLinks ul {
+    margin-bottom: 10px;
+  }
+  .newsLetter .newsLetterInputContainer {
+    width: 100%;
+  }
+  .newsLetter .newsLetterInputContainer input {
+    width: inherit;
+  }
+  .newsLetter .newsLetterInputContainer button {
+    font-size: 14px;
+  }
+  .newsLetter .socialIconsContainer {
+    width: 60%;
+  }
+  .footer-copyright {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .newsLetter .socialIconsContainer {
+    width: 85%;
+  }
+}

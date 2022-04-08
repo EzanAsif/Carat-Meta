@@ -5,6 +5,7 @@ import PastDrops from "../../sections/PastDrops/PastDrops";
 import SectionsContainer from "../../components/SectionsContainer/SectionsContainer";
 import LatestInsights from "../../sections/LatestInsights/LatestInsights";
 import FeaturedIn from "../../sections/FeaturedIn/FeaturedIn";
+import SiteFooter from "../../sections/SiteFooter/SiteFooter";
 const HomePage = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const HomePage = () => {
         <LatestInsights />
       </SectionsContainer>
       <FeaturedIn />
+      <SiteFooter />
     </div>
   );
 };
