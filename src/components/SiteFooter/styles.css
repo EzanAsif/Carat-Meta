@@ -113,7 +113,7 @@
 
 .footer-copyright {
   text-align: center;
-  margin: 65px 0px 10px;
+  margin: 35px 0px 10px;
   font-family: "Abel";
   letter-spacing: 0.075em;
   color: rgb(0, 0, 0);
@@ -134,6 +134,9 @@
   }
   .footerContent .extraLinks ul {
     margin: 30px 0px;
+  }
+  .footerContent .extraLinks ul li {
+    margin: 8px 0px;
   }
   .newsLetter .newsLetterInputContainer {
     width: 85%;

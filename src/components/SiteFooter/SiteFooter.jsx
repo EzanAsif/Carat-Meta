@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles.css";
 import { Link } from "react-router-dom";
-import { BsFillArrowRightSquareFill } from "react-icons/bs";
 import { FaDiscord, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 

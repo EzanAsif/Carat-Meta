@@ -1,15 +1,15 @@
 import React from "react";
-import SiteNav from "../../components/SiteNav/SiteNav";
-import HomePageHeroSection from "../../sections/HomePageHeroSection/HomePageHeroSection";
-import PastDrops from "../../sections/PastDrops/PastDrops";
-import SectionsContainer from "../../components/SectionsContainer/SectionsContainer";
-import LatestInsights from "../../sections/LatestInsights/LatestInsights";
-import FeaturedIn from "../../sections/FeaturedIn/FeaturedIn";
-import SiteFooter from "../../sections/SiteFooter/SiteFooter";
+import { SectionsContainer, PageContainer } from "../../components";
+import {
+  HomePageHeroSection,
+  PastDrops,
+  LatestInsights,
+  FeaturedIn,
+} from "../../sections";
+
 const HomePage = () => {
   return (
-    <div>
-      <SiteNav />
+    <PageContainer>
       <div style={{ marginTop: "80px" }}>
         <HomePageHeroSection />
       </div>
@@ -18,8 +18,7 @@ const HomePage = () => {
         <LatestInsights />
       </SectionsContainer>
       <FeaturedIn />
-      <SiteFooter />
-    </div>
+    </PageContainer>
   );
 };
 

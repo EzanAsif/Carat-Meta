@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { Link } from "react-router-dom";
-import SlideComponent from "../../components/SlideComponent/SlideComponent";
+import { SlideComponent } from "../../components";
 
 const images = [
   "https://exclusible.com/static/assets/images/uni1.jpeg",

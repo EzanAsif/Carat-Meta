@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
-import SlideComponent from "../../components/SlideComponent/SlideComponent";
+import { SlideComponent } from "../../components";
 
 const images = [
   "https://d3h5uaiactj0we.cloudfront.net/media/Amedeo_drop_banner.jpg",

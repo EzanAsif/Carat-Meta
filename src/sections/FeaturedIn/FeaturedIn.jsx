@@ -5,7 +5,7 @@ import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
-import SlideComponent from "../../components/SlideComponent/SlideComponent";
+import { SlideComponent } from "../../components";
 import FeaturedIn1 from "../../assets/featuredIn1.png";
 import FeaturedIn2 from "../../assets/featuredIn2.png";
 import FeaturedIn3 from "../../assets/featuredIn3.png";
