@@ -1,0 +1,135 @@
+.drop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.drop .dropThumbnail {
+  width: 100%;
+  height: 400px;
+  margin: 50px 0px 25px 0px;
+}
+
+.drop .dropThumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.drop .dropContent {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+.drop .dropContent .dropInfo {
+  width: 75%;
+}
+
+.drop .dropContent .dropInfo .dropHeading {
+  margin: 0px 10px 0px 0px;
+  font-family: "Inter";
+  letter-spacing: 0.01em;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #26282f;
+  word-wrap: break-word;
+  font-size: 1.5rem;
+}
+.drop .dropContent .dropInfo .dropHub {
+  display: flex;
+  align-items: center;
+}
+
+.drop .dropContent .dropInfo .dropHub img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.drop .dropContent .dropInfo .dropHub h6 {
+  font-family: "Inter";
+  letter-spacing: 0.01em;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 700;
+  color: #26282f;
+  margin-left: 15px;
+}
+
+.drop .dropContent .dropInfo .dropDetails p {
+  width: 80%;
+  margin: 0px;
+  text-align: left;
+  font-family: "Inter";
+  color: rgb(36, 36, 36);
+  font-weight: 400;
+}
+
+/* .drop .dropContent .dropCta {
+  width: 35%;
+} */
+
+.drop .dropContent .dropCta button {
+  width: max-content;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(rgb(22, 22, 22) 50%, rgb(255, 255, 255) 400.78%) repeat
+    scroll 0% 0%;
+  font-family: "Inter";
+  font-weight: 600;
+  color: white;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.dropSubscribe {
+  width: 100%;
+  background-color: #141414;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  margin: 60px 0px;
+}
+
+.dropSubscribe .content h3 {
+  color: white;
+  text-align: center;
+}
+
+.dropSubscribe .newsLetterInputContainer {
+  background-color: #26282f;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.dropSubscribe .newsLetterInputContainer input {
+  background-color: transparent;
+  padding-left: 5px;
+  color: white;
+}
+
+@media screen and (max-width: 650px) {
+  .drop .dropContent .dropInfo {
+    width: 100%;
+  }
+  .drop .dropContent .dropCta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+  }
+  .drop .dropContent .dropInfo .dropDetails p {
+    width: 95%;
+  }
+  .drop .dropContent .dropCta button {
+    padding: 15px 50px;
+  }
+}

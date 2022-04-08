@@ -27,13 +27,13 @@ const SiteNav = () => {
     <>
       <nav className={Navbar ? "navbar active" : "navbar"}>
         <div className="navbar-container">
-          <a href="/" className="navbar-logo" onCLick={closeMobileMenu}>
+          <Link to="/" className="navbar-logo" onCLick={closeMobileMenu}>
             <img
               src={
                 "https://exclusible.com/static/assets/icons/ex_logo_white.svg"
               }
             />
-          </a>
+          </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i>{Click ? "X" : "="}</i>
           </div>
@@ -43,7 +43,11 @@ const SiteNav = () => {
               style={{ display: "flex", flexWrap: "wrap" }}
             >
               <li className="nav-item">
-                <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                <Link
+                  to="/drop"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
                   Drop Calendar
                 </Link>
               </li>

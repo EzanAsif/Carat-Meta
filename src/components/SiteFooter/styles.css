@@ -27,7 +27,7 @@
   margin-top: 0;
 }
 
-.newsLetter .newsLetterInputContainer {
+.newsLetterInputContainer {
   width: 100%;
   border: 1.5px solid #aaaaaa;
   border-radius: 10px;
@@ -36,7 +36,7 @@
   justify-content: space-between;
 }
 
-.newsLetter .newsLetterInputContainer input {
+.newsLetterInputContainer input {
   height: 40px;
   /* width: -moz-available; */
   border: none;
@@ -44,7 +44,7 @@
   padding: 5px;
 }
 
-.newsLetter .newsLetterInputContainer input:focus {
+.newsLetterInputContainer input:focus {
   outline: none;
   border: none;
   color: #6d6d6d;
@@ -54,7 +54,7 @@
   color: #6d6d6d;
 }
 
-.newsLetter .newsLetterInputContainer button {
+.newsLetterInputContainer button {
   font-size: 16px;
   margin-right: 5px;
   cursor: pointer;
@@ -138,7 +138,7 @@
   .footerContent .extraLinks ul li {
     margin: 8px 0px;
   }
-  .newsLetter .newsLetterInputContainer {
+  .newsLetterInputContainer {
     width: 85%;
   }
   .newsLetter .socialIconsContainer {
@@ -156,13 +156,13 @@
   .footerContent .extraLinks ul {
     margin-bottom: 10px;
   }
-  .newsLetter .newsLetterInputContainer {
+  .newsLetterInputContainer {
     width: 100%;
   }
-  .newsLetter .newsLetterInputContainer input {
+  .newsLetterInputContainer input {
     width: inherit;
   }
-  .newsLetter .newsLetterInputContainer button {
+  .newsLetterInputContainer button {
     font-size: 14px;
   }
   .newsLetter .socialIconsContainer {

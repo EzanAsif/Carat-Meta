@@ -1,0 +1,31 @@
+.react-tabs__tab-list {
+  border: none !important;
+  width: max-content;
+  margin: 0px auto;
+}
+
+.react-tabs__tab {
+  background-color: white;
+  font-size: 16px;
+  font-family: "Inter";
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+}
+
+.react-tabs__tab--selected {
+  background-color: #141414 !important;
+  color: white !important;
+}
+
+.noDrops {
+  font-family: "Inter";
+  text-align: center;
+  font-size: 16px;
+  color: #6d6d6d;
+  font-weight: 400;
+  margin-top: 50px;
+}
