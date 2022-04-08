@@ -1,21 +1,30 @@
-.infinite-test {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  overflow: inherit;
-  padding: 0px 50px;
-  animation: 5s linear 2.5s infinite ease normal none running right-to-left-web;
-  /* position: relative;
-  animation-iteration-count: infinite; */
+/* body {
+  background-color: #333;
+} */
+
+.LatestInsightSlider img {
+  /* width: 100px;
+  height: 100px; */
+  animation: 40s linear 2.5s infinite normal none running scroll;
+  /* right-to-left-mobile */
 }
 
-/* @keyframes right-to-left-web {
-  0%,
-  100% {
-    left: 0;
-  }
+.LatestInsightSlide-track {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  overflow: hidden;
+}
 
-  50% {
-    left: 100%;
+.LatestInsightSlider {
+  padding: 8em 2em;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-} */
+  100% {
+    transform: translatex(-1000%);
+  }
+}

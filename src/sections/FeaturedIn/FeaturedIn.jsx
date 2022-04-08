@@ -49,17 +49,34 @@ const FeaturedIn = () => {
     FeaturedIn5,
     FeaturedIn6,
     FeaturedIn7,
+    FeaturedIn1,
+    FeaturedIn2,
+    FeaturedIn3,
+    FeaturedIn4,
   ];
 
   return (
+    //   <div style={{ width: "100%" }} className="SlideComponent">
+    //     <div className="infinite-test">
+    //       {images.map((obj, index) => {
+    //         return <img src={obj} key={index} />;
+    //       })}
+    //     </div>
+    //   </div>
+    // </div>
+
     <div style={{ margin: "50px 0px" }}>
       <div className="LatestInsightsHeader">
         <div className="LatestInsightsHeading">Featured In</div>
       </div>
-      <div style={{ width: "100%" }} className="SlideComponent">
-        <div className="infinite-test">
+      <div class="LatestInsightSlider">
+        <div class="LatestInsightSlide-track">
           {images.map((obj, index) => {
-            return <img src={obj} key={index} />;
+            return (
+              <div key={index} class="LatestInsightSlide">
+                <img src={obj} />
+              </div>
+            );
           })}
         </div>
       </div>
